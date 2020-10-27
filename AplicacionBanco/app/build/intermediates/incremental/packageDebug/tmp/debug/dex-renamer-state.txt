@@ -1,0 +1,4 @@
+#Tue Oct 27 18:30:55 CET 2020
+base.0=D\:\\Grado Superior\\2DAM\\Android\\Ejercicios\\AplicacionBanco\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
