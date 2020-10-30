@@ -30,10 +30,10 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/makeTransfer"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.018" />
 
     <GridView
         android:id="@+id/gridOpciones"

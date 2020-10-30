@@ -41,7 +41,6 @@ public class Transferencias extends AppCompatActivity {
         amountTransfer=(EditText)findViewById(R.id.amountTransfer);
         btnCancel=(Button)findViewById(R.id.btnCancel);
         receiptCheck=(CheckBox)findViewById(R.id.receiptCheck);
-
         String cuentas[]=new String[]{"ES0000000001","ES0000000002","ES0000000003","ES0000000004"};
         String divisasMoneda[]=new String[]{"EUR","DOLAR","RUBLOS","YENS","PESOS"};
 
@@ -101,9 +100,11 @@ public class Transferencias extends AppCompatActivity {
                 otherAcc.setChecked(false);
                 recipientAcc.setText("");
                 amountTransfer.setText("");
-                //grdOpciones.getselec
-                //divisas.setAdapter();
+
                 receiptCheck.setChecked(false);
+                gridText="";
+                divisaText="";
+
             }
         });
 

@@ -19,11 +19,15 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="jogasa.simarro.aplicacionbanco.Transferencias" />
+        <activity
+            android:name="jogasa.simarro.aplicacionbanco.Transferencias"
+            android:windowSoftInputMode="adjustPan" />
         <activity android:name="jogasa.simarro.aplicacionbanco.changePasswd" />
         <activity android:name="jogasa.simarro.aplicacionbanco.mainAppActivity" />
-        <activity android:name="jogasa.simarro.aplicacionbanco.Login" />
-        <activity android:name="jogasa.simarro.aplicacionbanco.MainActivity" >
+        <activity
+            android:name="jogasa.simarro.aplicacionbanco.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="jogasa.simarro.aplicacionbanco.WelcomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
