@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 a.setNif(txtdatos.getText().toString());
                 a.setClaveSeguridad(txtContrasena.getText().toString());
                 a = mbo.login(a);
+
                 if(a!=null){
                     Intent intent=new Intent(MainActivity.this,mainAppActivity.class);
                     intent.putExtra("Cliente",a);

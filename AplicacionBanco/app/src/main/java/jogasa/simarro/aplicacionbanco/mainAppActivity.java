@@ -23,10 +23,12 @@ public class mainAppActivity extends AppCompatActivity  implements Serializable 
         ImageButton btnAcceder=(ImageButton)findViewById(R.id.btnContrasena);
         Button btnSalir=(Button)findViewById(R.id.btnSalir);
         ImageButton btnCuentas=(ImageButton)findViewById(R.id.btnCuentas);
-
         ImageButton btnTransferencias=(ImageButton)findViewById(R.id.btnTransferencias);
+
         recogido=(Cliente)getIntent().getSerializableExtra("Cliente");
         Toast.makeText(this, "Bienvenido "+recogido.getNombre(), Toast.LENGTH_SHORT).show();
+
+        //CHANGE PASSWD
         btnAcceder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,6 +37,7 @@ public class mainAppActivity extends AppCompatActivity  implements Serializable 
                 startActivity(intent);
             }
         });
+        //CUENTAS
         btnCuentas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,6 +46,7 @@ public class mainAppActivity extends AppCompatActivity  implements Serializable 
                 startActivity(intent);
             }
         });
+        //EXIT
         btnSalir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,11 +54,12 @@ public class mainAppActivity extends AppCompatActivity  implements Serializable 
                 startActivity(intent);
             }
         });
-
+        //TRANSFERS
         btnTransferencias.setOnClickListener(new View.OnClickListener(){
           @Override
           public void onClick(View v){
               Intent newintent=new Intent(mainAppActivity.this, Transferencias.class);
+              newintent.putExtra("Cliente",recogido);
               startActivity(newintent);
           }
         });

@@ -19,6 +19,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="jogasa.simarro.aplicacionbanco.pojo.Movimientos" />
+        <activity android:name="jogasa.simarro.aplicacionbanco.Cuentas" />
         <activity
             android:name="jogasa.simarro.aplicacionbanco.Transferencias"
             android:windowSoftInputMode="adjustPan" />
