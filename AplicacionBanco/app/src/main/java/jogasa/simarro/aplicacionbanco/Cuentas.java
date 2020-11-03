@@ -32,7 +32,6 @@ public class Cuentas extends AppCompatActivity implements AdapterView.OnItemClic
         recogida=(Cliente)getIntent().getSerializableExtra("Cliente");
         lista=(ListView)findViewById(R.id.listaCuentas);
         ArrayList<Cuenta> cuentas=mbo.getCuentas(recogida);
-        Log.d("PEPE",String.valueOf(cuentas.get(0).getSaldoActual()));
         adaptador=new AdapterCuentas<Cuenta>(this,cuentas);
 
         lista.setAdapter(adaptador);

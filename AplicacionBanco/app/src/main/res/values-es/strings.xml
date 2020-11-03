@@ -24,4 +24,5 @@
     <string name="receipt">Enviar Justificante</string>
     <string name="amount">Importe</string>
     <string name="cancel">Cancelar</string>
+    <string name="movements">Movimientos</string>
 </resources>

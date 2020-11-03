@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cuentas">
+    tools:context=".Cuentas"
+    android:background="@mipmap/change_passwd"
+    >
 
     <ListView
         android:id="@+id/listaCuentas"

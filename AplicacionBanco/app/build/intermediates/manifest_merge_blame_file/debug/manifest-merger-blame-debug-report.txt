@@ -11,7 +11,7 @@
 9-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:5:5-29:19
+11-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:5:5-30:19
 12        android:allowBackup="true"
 12-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -28,44 +28,47 @@
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
 20-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="jogasa.simarro.aplicacionbanco.pojo.Movimientos" />
-21-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:12:9-63
-21-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:12:19-51
-22        <activity android:name="jogasa.simarro.aplicacionbanco.Cuentas" />
-22-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:13:9-45
-22-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:13:19-42
-23        <activity
-23-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:14:9-16:55
-24            android:name="jogasa.simarro.aplicacionbanco.Transferencias"
-24-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:15:13-43
-25            android:windowSoftInputMode="adjustPan" />
-25-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:16:13-52
-26        <activity android:name="jogasa.simarro.aplicacionbanco.changePasswd" />
-26-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:17:9-50
-26-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:17:19-47
-27        <activity android:name="jogasa.simarro.aplicacionbanco.mainAppActivity" />
-27-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:18:9-53
-27-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:18:19-50
-28        <activity
-28-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:19:9-21:55
-29            android:name="jogasa.simarro.aplicacionbanco.MainActivity"
-29-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:20:13-41
-30            android:windowSoftInputMode="adjustPan" />
-30-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:21:13-52
-31        <activity android:name="jogasa.simarro.aplicacionbanco.WelcomeActivity" >
-31-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:22:9-28:20
-31-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:22:19-50
-32            <intent-filter>
-32-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:23:13-27:29
-33                <action android:name="android.intent.action.MAIN" />
-33-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:24:17-69
-33-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:24:25-66
-34
-35                <category android:name="android.intent.category.LAUNCHER" />
-35-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:26:17-77
-35-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:26:27-74
-36            </intent-filter>
-37        </activity>
-38    </application>
-39
-40</manifest>
+21        <activity android:name="jogasa.simarro.aplicacionbanco.AdapterMovimientos" />
+21-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:12:9-65
+21-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:12:19-53
+22        <activity android:name="jogasa.simarro.aplicacionbanco.pojo.Movimientos" />
+22-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:13:9-54
+22-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:13:19-51
+23        <activity android:name="jogasa.simarro.aplicacionbanco.Cuentas" />
+23-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:14:9-45
+23-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:14:19-42
+24        <activity
+24-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:15:9-17:55
+25            android:name="jogasa.simarro.aplicacionbanco.Transferencias"
+25-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:16:13-43
+26            android:windowSoftInputMode="adjustPan" />
+26-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:17:13-52
+27        <activity android:name="jogasa.simarro.aplicacionbanco.changePasswd" />
+27-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:18:9-50
+27-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:18:19-47
+28        <activity android:name="jogasa.simarro.aplicacionbanco.mainAppActivity" />
+28-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:19:9-53
+28-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:19:19-50
+29        <activity
+29-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:20:9-22:55
+30            android:name="jogasa.simarro.aplicacionbanco.MainActivity"
+30-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:21:13-41
+31            android:windowSoftInputMode="adjustPan" />
+31-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:22:13-52
+32        <activity android:name="jogasa.simarro.aplicacionbanco.WelcomeActivity" >
+32-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:23:9-29:20
+32-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:23:19-50
+33            <intent-filter>
+33-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:24:13-28:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:25:17-69
+34-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:25:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:27:17-77
+36-->D:\Grado Superior\2DAM\Android\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:27:27-74
+37            </intent-filter>
+38        </activity>
+39    </application>
+40
+41</manifest>

@@ -16,6 +16,10 @@
         "source": "D:\\Grado Superior\\2DAM\\Android\\Ejercicios\\AplicacionBanco\\app\\src\\main\\res\\mipmap-xxxhdpi\\settings.png"
     },
     {
+        "merged": "D:\\Grado Superior\\2DAM\\Android\\Ejercicios\\AplicacionBanco\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_adapter_movimientos.xml.flat",
+        "source": "D:\\Grado Superior\\2DAM\\Android\\Ejercicios\\AplicacionBanco\\app\\src\\main\\res\\layout\\activity_adapter_movimientos.xml"
+    },
+    {
         "merged": "D:\\Grado Superior\\2DAM\\Android\\Ejercicios\\AplicacionBanco\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "D:\\Grado Superior\\2DAM\\Android\\Ejercicios\\AplicacionBanco\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
@@ -68,12 +72,12 @@
         "source": "D:\\Grado Superior\\2DAM\\Android\\Ejercicios\\AplicacionBanco\\app\\src\\main\\res\\mipmap-xxxhdpi\\login.png"
     },
     {
-        "merged": "D:\\Grado Superior\\2DAM\\Android\\Ejercicios\\AplicacionBanco\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_acceder_boton.png.flat",
-        "source": "D:\\Grado Superior\\2DAM\\Android\\Ejercicios\\AplicacionBanco\\app\\src\\main\\res\\mipmap-xxxhdpi\\acceder_boton.png"
-    },
-    {
         "merged": "D:\\Grado Superior\\2DAM\\Android\\Ejercicios\\AplicacionBanco\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_movimientos.xml.flat",
         "source": "D:\\Grado Superior\\2DAM\\Android\\Ejercicios\\AplicacionBanco\\app\\src\\main\\res\\layout\\activity_movimientos.xml"
+    },
+    {
+        "merged": "D:\\Grado Superior\\2DAM\\Android\\Ejercicios\\AplicacionBanco\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_acceder_boton.png.flat",
+        "source": "D:\\Grado Superior\\2DAM\\Android\\Ejercicios\\AplicacionBanco\\app\\src\\main\\res\\mipmap-xxxhdpi\\acceder_boton.png"
     },
     {
         "merged": "D:\\Grado Superior\\2DAM\\Android\\Ejercicios\\AplicacionBanco\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_activity_main.xml.flat",

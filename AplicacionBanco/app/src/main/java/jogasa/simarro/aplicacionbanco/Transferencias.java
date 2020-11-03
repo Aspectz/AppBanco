@@ -101,35 +101,12 @@ public class Transferencias extends AppCompatActivity {
                 boolean checked=receiptCheck.isChecked();
                 String amountText=amountTransfer.getText().toString();
                 String numAcc=recipientAcc.getText().toString();
-                ArrayList<Cuenta> cuentasCliente=mbo.getCuentas(recogido);
-                Cuenta cuentaGrid=null,cuentaLista=null;
 
-                for(Cuenta c :  cuentasCliente){
-                    if(c.getNumeroCuenta().compareTo(gridText)==0){
-                        cuentaGrid=c;
-                    }if(c.getNumeroCuenta().compareTo(listaText)==0){
-                        cuentaLista=c;
-                    }
-                }
-                Date hoy= Calendar.getInstance().getTime();
-                Movimiento newMovement=new Movimiento(122, 2, hoy, "El pepe", Integer.parseInt(amountText), cuentaGrid, cuentaLista);
-                int pepe=mbo.transferencia(newMovement);
-
-                Toast.makeText(Transferencias.this, String.valueOf(cuentaGrid.getSaldoActual()), Toast.LENGTH_SHORT).show();
-
-                
-                if(cuentaGrid ==null || cuentaLista == null || cuentaGrid==cuentaLista){
-                    Toast.makeText(Transferencias.this, cuentaGrid.toString() +" o "+cuentaLista.toString(), Toast.LENGTH_SHORT).show();
-                }else{
                     if(ownAcc.isChecked()){
                         Toast.makeText(Transferencias.this, "Cuenta origen:"+gridText+",Cuenta destino:"+listaText+",Cantidad:"+amountText+",Divisa:"+divisaText+",Recibo:"+checked, Toast.LENGTH_SHORT).show();
-                    }else{
-                        Toast.makeText(Transferencias.this, "Cuenta origen:"+gridText+",Cuenta destino:"+numAcc+",Cantidad:"+amountText+",Divisa:"+divisaText+",Recibo:"+checked, Toast.LENGTH_SHORT).show();
+                    }else {
+                        Toast.makeText(Transferencias.this, "Cuenta origen:" + gridText + ",Cuenta destino:" + numAcc + ",Cantidad:" + amountText + ",Divisa:" + divisaText + ",Recibo:" + checked, Toast.LENGTH_SHORT).show();
                     }
-                }
-
-
-
             }
         });
         btnCancel.setOnClickListener(new View.OnClickListener() {
