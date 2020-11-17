@@ -31,7 +31,7 @@ public class changePasswd extends AppCompatActivity {
             public void onClick(View v) {
                 if(oldPasswd.getText().toString().compareTo(recogido.getClaveSeguridad())==0){
                    recogido.setClaveSeguridad(newPasswd.getText().toString());
-                    int p = mbo.changePassword(recogido);
+                   mbo.changePassword(recogido);
                     Intent intent=new Intent(changePasswd.this,mainAppActivity.class);
                     intent.putExtra("Cliente",recogido);
                     startActivity(intent);

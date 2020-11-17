@@ -578,6 +578,8 @@ color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color textColor
+color textGreen
+color textRed
 color tooltip_background_dark
 color tooltip_background_light
 dimen abc_action_bar_content_inset_material
@@ -990,6 +992,8 @@ id line3
 id linear
 id listMode
 id list_item
+id listaCuentas
+id listaMovimientos
 id makeTransfer
 id message
 id middle
@@ -1080,7 +1084,10 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id text
+id text1
 id text2
+id text3
+id text4
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
@@ -1154,10 +1161,14 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_adapter_movimientos
 layout activity_change_passwd
+layout activity_cuentas
+layout activity_cuentas_adapter
 layout activity_login
 layout activity_main
 layout activity_main_app
+layout activity_movimientos
 layout activity_tranferencias
 layout custom_dialog
 layout notification_action
@@ -1225,6 +1236,7 @@ string foreignAcc
 string ingresos
 string login
 string makeTransfer
+string movements
 string newPassword
 string oldPasswd
 string opciones

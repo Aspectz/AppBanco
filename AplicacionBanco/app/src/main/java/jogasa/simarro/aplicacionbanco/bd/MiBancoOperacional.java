@@ -7,7 +7,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import jogasa.simarro.aplicacionbanco.MainActivity;
 import jogasa.simarro.aplicacionbanco.pojo.Cliente;
 import jogasa.simarro.aplicacionbanco.pojo.Cuenta;
 import jogasa.simarro.aplicacionbanco.pojo.Movimiento;
@@ -89,8 +88,16 @@ public class MiBancoOperacional {
          - Si la operacion es correcta se devuelve un 0
     */
     public int transferencia(Movimiento movimientoTransferencia){
+        Cuenta origen=movimientoTransferencia.getCuentaOrigen();
+        Cuenta destino=movimientoTransferencia.getCuentaDestino();
+        origen.setSaldoActual(origen.getSaldoActual()-movimientoTransferencia.getImporte());
+        destino.setSaldoActual(destino.getSaldoActual()+movimientoTransferencia.getImporte());
+
+        Log.d("PEPE",origen.toString());
         return 0;
+
     }
+
 
     // Operacion getMovimientosTipo: Obtiene un ArrayList de los movimientos de un tipo específico de una cuenta que recibe como parámetro
     public ArrayList<Movimiento> getMovimientosTipo(Cuenta c, int tipo){

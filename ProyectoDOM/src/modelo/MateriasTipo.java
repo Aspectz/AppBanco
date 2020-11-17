@@ -2,21 +2,21 @@ package modelo;
 
 import java.util.ArrayList;
 
-public class MateriasTipo {
-	private ArrayList<ProcedimientoMateria> prodecimientoMateria;
+public class MateriasTipo extends ArrayList<ProcedimientoMateria>{
 
 	public ArrayList<ProcedimientoMateria> getProdecimientoMateria() {
-		return prodecimientoMateria;
+		return this;
 	}
 
-	public void setProdecimientoMateria(ArrayList<ProcedimientoMateria> prodecimientoMateria) {
-		this.prodecimientoMateria = prodecimientoMateria;
-	}
 
-	@Override
-	public String toString() {
-		return "MateriasTipo [prodecimientoMateria=" + prodecimientoMateria + "]";
-	}
+	 @Override
+	 public String toString() {
+		 String result="";
+		 for(int i=0;i<this.getProdecimientoMateria().size();i++) {
+			 result+="\n"+this.getProdecimientoMateria().get(i);
+		 }
+		 return result;
+	 }	
 	
 	
 }

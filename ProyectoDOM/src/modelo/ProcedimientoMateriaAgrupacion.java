@@ -3,16 +3,16 @@ package modelo;
 import java.util.ArrayList;
 
 public class ProcedimientoMateriaAgrupacion {
-	private int id;
+	private String id;
 	private String title;
 	private String prefLabel;
-	private ArrayList<MateriasTipo> materiasTipo;
+	private MateriasTipo materiasTipo;
 	
 	
-	public int getId() {
+	public String getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getTitle() {
@@ -27,10 +27,10 @@ public class ProcedimientoMateriaAgrupacion {
 	public void setPrefLabel(String prefLabel) {
 		this.prefLabel = prefLabel;
 	}
-	public ArrayList<MateriasTipo> getMateriasTipo() {
+	public MateriasTipo getMateriasTipo() {
 		return materiasTipo;
 	}
-	public void setMateriasTipo(ArrayList<MateriasTipo> materiasTipo) {
+	public void setMateriasTipo(MateriasTipo materiasTipo) {
 		this.materiasTipo = materiasTipo;
 	}
 	@Override

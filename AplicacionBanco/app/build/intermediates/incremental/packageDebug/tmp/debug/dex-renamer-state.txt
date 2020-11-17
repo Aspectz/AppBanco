@@ -1,4 +1,4 @@
-#Fri Oct 30 13:39:06 CET 2020
-base.0=D\:\\TeoriaAndroid\\Ejercicios\\AplicacionBanco\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Tue Nov 03 22:52:45 CET 2020
+base.0=D\:\\Grado Superior\\2DAM\\Android\\Ejercicios\\AplicacionBanco\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

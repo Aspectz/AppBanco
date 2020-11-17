@@ -2,6 +2,7 @@ package jogasa.simarro.aplicacionbanco;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
@@ -17,6 +18,15 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+
+import jogasa.simarro.aplicacionbanco.bd.MiBancoOperacional;
+import jogasa.simarro.aplicacionbanco.pojo.Cliente;
+import jogasa.simarro.aplicacionbanco.pojo.Cuenta;
+import jogasa.simarro.aplicacionbanco.pojo.Movimiento;
+
 public class Transferencias extends AppCompatActivity {
     private GridView grdOpciones;
     private RadioButton ownAcc,otherAcc;
@@ -25,7 +35,8 @@ public class Transferencias extends AppCompatActivity {
     private Button btnOk,btnCancel;
     private CheckBox receiptCheck;
     private String gridText,listaText,divisaText;
-
+    private Cliente recogido;
+    private MiBancoOperacional mbo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +52,15 @@ public class Transferencias extends AppCompatActivity {
         amountTransfer=(EditText)findViewById(R.id.amountTransfer);
         btnCancel=(Button)findViewById(R.id.btnCancel);
         receiptCheck=(CheckBox)findViewById(R.id.receiptCheck);
-        String cuentas[]=new String[]{"ES0000000001","ES0000000002","ES0000000003","ES0000000004"};
+        mbo= MiBancoOperacional.getInstance(this);
+        recogido=(Cliente)getIntent().getSerializableExtra("Cliente");
+        ArrayList<Cuenta> cuentasCliente=mbo.getCuentas(recogido);
+        final ArrayList<String> cuentas=new ArrayList<String>();
+
+        for(int i=0;i<cuentasCliente.size();i++){
+            cuentas.add(cuentasCliente.get(i).getNumeroCuenta());
+        }
+
         String divisasMoneda[]=new String[]{"EUR","DOLAR","RUBLOS","YENS","PESOS"};
 
         ArrayAdapter<String> adaptador =
@@ -82,13 +101,12 @@ public class Transferencias extends AppCompatActivity {
                 boolean checked=receiptCheck.isChecked();
                 String amountText=amountTransfer.getText().toString();
                 String numAcc=recipientAcc.getText().toString();
-                if(ownAcc.isChecked()){
-                    Toast.makeText(Transferencias.this, "Cuenta origen:"+gridText+",Cuenta destino:"+listaText+",Cantidad:"+amountText+",Divisa:"+divisaText+",Recibo:"+checked, Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(Transferencias.this, "Cuenta origen:"+gridText+",Cuenta destino:"+numAcc+",Cantidad:"+amountText+",Divisa:"+divisaText+",Recibo:"+checked, Toast.LENGTH_SHORT).show();
-                }
 
-
+                    if(ownAcc.isChecked()){
+                        Toast.makeText(Transferencias.this, "Cuenta origen:"+gridText+",Cuenta destino:"+listaText+",Cantidad:"+amountText+",Divisa:"+divisaText+",Recibo:"+checked, Toast.LENGTH_SHORT).show();
+                    }else {
+                        Toast.makeText(Transferencias.this, "Cuenta origen:" + gridText + ",Cuenta destino:" + numAcc + ",Cantidad:" + amountText + ",Divisa:" + divisaText + ",Recibo:" + checked, Toast.LENGTH_SHORT).show();
+                    }
             }
         });
         btnCancel.setOnClickListener(new View.OnClickListener() {

@@ -1,14 +1,27 @@
 package modelo;
 
 public class ProcedimientoTramite {
-	private int id;
+	private String id;
 	private String title;
 	private String enLinea;
 	private String certificado;
-	public int getId() {
+	
+	
+	
+	public ProcedimientoTramite() {
+		
+	}
+	public ProcedimientoTramite(String id, String title, String enLinea, String certificado) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.enLinea = enLinea;
+		this.certificado = certificado;
+	}
+	public String getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getTitle() {
