@@ -23,6 +23,14 @@ anim btn_radio_to_off_mtrl_ring_outer_path_animation
 anim btn_radio_to_on_mtrl_dot_group_animation
 anim btn_radio_to_on_mtrl_ring_outer_animation
 anim btn_radio_to_on_mtrl_ring_outer_path_animation
+array base
+array codigoBase
+array codigoColores
+array codigoNotificaciones
+array codigopais
+array colores
+array notificaciones
+array pais
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -813,6 +821,10 @@ drawable tooltip_frame_light
 id ALT
 id CTRL
 id FUNCTION
+id FrgCuentas
+id FrgMovimientos
+id LstCuentas
+id LstMovimientos
 id META
 id NO_DEBUG
 id SHIFT
@@ -854,6 +866,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id action_accounts
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -865,12 +878,17 @@ id action_container
 id action_context_bar
 id action_divider
 id action_image
+id action_income
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_passwd
+id action_settings
+id action_support
 id action_text
+id action_transfer
 id actions
 id activity_chooser_view_content
 id add
@@ -880,6 +898,7 @@ id always
 id amountTransfer
 id animateToEnd
 id animateToStart
+id appbar
 id asConfigured
 id async
 id autoComplete
@@ -889,6 +908,7 @@ id barrier
 id baseline
 id beginOnFirstDraw
 id beginning
+id bienvenido
 id bienvenidoText
 id blocking
 id bottom
@@ -946,7 +966,6 @@ id editTextTextPassword2
 id editTextTextPassword3
 id editTextTextPassword4
 id editTextTextPassword5
-id editTextTextPersonName
 id editUsuario
 id edit_query
 id end
@@ -992,8 +1011,7 @@ id line3
 id linear
 id listMode
 id list_item
-id listaCuentas
-id listaMovimientos
+id listaCajeros
 id makeTransfer
 id message
 id middle
@@ -1009,7 +1027,6 @@ id notification_main_column_container
 id off
 id oldtxtPasswd
 id on
-id otherAcc
 id ownAcc
 id packed
 id parent
@@ -1025,7 +1042,6 @@ id progress_horizontal
 id radio
 id ratio
 id receiptCheck
-id recipientAcc
 id recipientAccountText
 id rectangles
 id reverseSawtooth
@@ -1088,6 +1104,8 @@ id text1
 id text2
 id text3
 id text4
+id text5
+id textDialog
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
@@ -1113,6 +1131,7 @@ id transitionToEnd
 id transitionToStart
 id triangle
 id txtNewPasswd
+id txtSinDatos
 id unchecked
 id uniform
 id up
@@ -1162,6 +1181,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_adapter_movimientos
+layout activity_cajeros
 layout activity_change_passwd
 layout activity_cuentas
 layout activity_cuentas_adapter
@@ -1169,8 +1189,12 @@ layout activity_login
 layout activity_main
 layout activity_main_app
 layout activity_movimientos
+layout activity_settings
 layout activity_tranferencias
 layout custom_dialog
+layout fragment_cuentas
+layout fragment_movimientos
+layout layout_dialogfragment
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -1181,6 +1205,8 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout toolbar
+menu menu_main
 mipmap acceder_boton
 mipmap change_passwd
 mipmap change_passwdland
@@ -1234,6 +1260,7 @@ string contraseñaActualizada
 string cuentas
 string foreignAcc
 string ingresos
+string languages
 string login
 string makeTransfer
 string movements
@@ -1673,3 +1700,4 @@ styleable Variant constraints region_heightLessThan region_heightMoreThan region
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml opciones

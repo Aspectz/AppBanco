@@ -1,6 +1,7 @@
 package jogasa.simarro.aplicacionbanco.bd;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
@@ -8,6 +9,8 @@ import android.util.Log;
 import jogasa.simarro.aplicacionbanco.dao.ClienteDAO;
 import jogasa.simarro.aplicacionbanco.dao.CuentaDAO;
 import jogasa.simarro.aplicacionbanco.dao.MovimientoDAO;
+import jogasa.simarro.aplicacionbanco.pojo.Cuenta;
+import jogasa.simarro.aplicacionbanco.pojo.Movimiento;
 
 
 public class MiBD extends SQLiteOpenHelper {
@@ -16,7 +19,7 @@ public class MiBD extends SQLiteOpenHelper {
     //nombre de la base de datos
     private static final String database = "MiBanco";
     //versión de la base de datos
-    private static final int version = 11;
+    private static final int version = 13;
     //Instrucción SQL para crear la tabla de Clientes
     private String sqlCreacionClientes = "CREATE TABLE clientes ( id INTEGER PRIMARY KEY AUTOINCREMENT, nif STRING, nombre STRING, " +
             "apellidos STRING, claveSeguridad STRING, email STRING);";
@@ -72,6 +75,7 @@ public class MiBD extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+        //y luego creamos la nueva tabla
         db.execSQL(sqlCreacionClientes);
         db.execSQL(sqlCreacionCuentas);
         db.execSQL(sqlCreacionMovimientos);
@@ -79,6 +83,26 @@ public class MiBD extends SQLiteOpenHelper {
         insercionDatos(db);
         Log.i("SQLite", "Se crea la base de datos " + database + " version " + version);
     }
+
+    public void insercionMovimiento(Movimiento m){
+        db.execSQL("INSERT INTO movimientos (rowid, id, tipo, fechaoperacion, descripcion, importe," +
+                        " idcuentaorigen, idcuentadestino) VALUES (null, null, " +
+                m.getTipo()+", "+m.getFechaOperacion().getTime()+", '"+m.getDescripcion()+"', "+m.getImporte()+", " +
+                ""+m.getCuentaOrigen().getId()+", "+m.getCuentaDestino().getId()+");");
+    }
+    public void actualizarSaldo(Cuenta c){
+        db.execSQL("UPDATE cuentas SET saldoactual= "+c.getSaldoActual()+" WHERE banco='"+c.getBanco()+
+                "'AND sucursal='"+c.getSucursal()+"' AND dc='"+c.getDc()+"' AND numerocuenta='"+c.getNumeroCuenta()+"';");
+    }
+    public boolean existeCuenta(String banco,String sucursal,String dc,String numCuenta){
+        String sql="SELECT numerocuenta FROM cuentas WHERE banco='"+banco+"' AND sucursal='"+sucursal+"' AND dc='"+dc+"' AND numerocuenta='"+numCuenta+"';";
+        Cursor c = db.rawQuery(sql,null);
+        if (c.getCount() > 0) {
+            return true;
+        }
+        return false;
+    }
+
 
     @Override
     public void onUpgrade( SQLiteDatabase db,  int oldVersion, int newVersion ) {

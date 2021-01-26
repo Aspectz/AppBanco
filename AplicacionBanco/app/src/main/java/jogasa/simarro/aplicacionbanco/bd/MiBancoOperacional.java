@@ -90,11 +90,18 @@ public class MiBancoOperacional {
     public int transferencia(Movimiento movimientoTransferencia){
         Cuenta origen=movimientoTransferencia.getCuentaOrigen();
         Cuenta destino=movimientoTransferencia.getCuentaDestino();
-        origen.setSaldoActual(origen.getSaldoActual()-movimientoTransferencia.getImporte());
-        destino.setSaldoActual(destino.getSaldoActual()+movimientoTransferencia.getImporte());
-
-        Log.d("PEPE",origen.toString());
-        return 0;
+        if(miBD.existeCuenta(destino.getBanco(),destino.getSucursal(),destino.getDc(),destino.getNumeroCuenta())){
+            if(origen.getSaldoActual()>=movimientoTransferencia.getImporte()){
+                origen.setSaldoActual(origen.getSaldoActual()-movimientoTransferencia.getImporte());
+                destino.setSaldoActual(destino.getSaldoActual()+movimientoTransferencia.getImporte());
+                miBD.actualizarSaldo(destino);
+                miBD.actualizarSaldo(origen);
+                miBD.insercionMovimiento(movimientoTransferencia);
+            }else{
+                return 2;
+            }
+        }
+        return 1;
 
     }
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/login"
-    tools:context=".Login">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.214" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editContrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
