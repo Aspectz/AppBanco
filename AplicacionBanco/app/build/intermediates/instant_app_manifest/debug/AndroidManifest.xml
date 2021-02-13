@@ -20,8 +20,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="jogasa.simarro.aplicacionbanco.pojo.GestionCajerosActivity" />
         <activity android:name="jogasa.simarro.aplicacionbanco.pojo.Cajeros" />
-        <activity android:name="jogasa.simarro.aplicacionbanco.pojo.MainActivity" />
         <activity android:name="jogasa.simarro.aplicacionbanco.pojo.SettingsActivity" />
         <activity android:name="jogasa.simarro.aplicacionbanco.adaptadores.AdapterMovimientos" />
         <activity android:name="jogasa.simarro.aplicacionbanco.pojo.Movimientos" />

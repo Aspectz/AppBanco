@@ -13,15 +13,12 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
+
 import androidx.fragment.app.DialogFragment;
 
-import org.w3c.dom.Text;
-
-import java.util.ArrayList;
 
 import jogasa.simarro.aplicacionbanco.R;
-import jogasa.simarro.aplicacionbanco.bd.MiBancoOperacional;
+
 
 public class DialogoMovimientos extends DialogFragment {
     @NonNull

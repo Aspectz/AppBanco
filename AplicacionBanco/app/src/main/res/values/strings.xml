@@ -25,4 +25,8 @@
     <string name="cancel">Cancel</string>
     <string name="languages">Languages</string>
     <string name="movements">Movements</string>
+    <string name="cajero_crear_titulo">Crear Cajero</string>
+    <string name="cajero_editar_titulo">Editar Cajero</string>
+    <string name="boton_cancelar">Cancelar</string>
+    <string name="boton_guardar">Guardar</string>
 </resources>

@@ -15,4 +15,9 @@ public class Constantes {
     /** Array de campos de tabla de cajeros */
     public static final String[] CAMPOS_CAJEROS = new
             String[]{FIELD_CAJEROS_ID,FIELD_DIRECCION,FIELD_LAT,FIELD_LNG,FIELD_ZOOM};
+
+    public static final String C_MODO="modo";
+    public static final int C_VISUALIZAR=551;
+    public static final int C_CREAR=552;
+    public static final int C_EDITAR=553;
 }

@@ -10,8 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".pojo.Cajeros"></activity>
-        <activity android:name=".pojo.MainActivity" />
+        <activity android:name=".pojo.GestionCajerosActivity"></activity>
+        <activity android:name=".pojo.Cajeros" />
+
         <activity android:name=".pojo.SettingsActivity" />
         <activity android:name=".adaptadores.AdapterMovimientos" />
         <activity android:name=".pojo.Movimientos" />

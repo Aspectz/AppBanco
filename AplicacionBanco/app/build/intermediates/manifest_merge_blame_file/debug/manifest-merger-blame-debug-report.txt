@@ -6,78 +6,78 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="19"
-8-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml
+8-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml
+9-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:5:5-34:19
+11-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:5:5-35:19
 12        android:allowBackup="true"
-12-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:6:9-35
+12-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.3.1] C:\Users\mati\.gradle\caches\transforms-2\files-2.1\ae3468b444d41a56f261ecbb8448fe17\core-1.3.1\AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.3.1] C:\Users\josep\.gradle\caches\transforms-2\files-2.1\ae3468b444d41a56f261ecbb8448fe17\core-1.3.1\AndroidManifest.xml:24:18-86
 14        android:configChanges="locale|orientation"
-14-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:7:9-51
+14-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:7:9-51
 15        android:debuggable="true"
 16        android:icon="@mipmap/ic_launcher"
-16-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:8:9-43
+16-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:8:9-43
 17        android:label="@string/app_name"
-17-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:9:9-41
+17-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:9:9-41
 18        android:roundIcon="@mipmap/ic_launcher_round"
-18-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:10:9-54
+18-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:10:9-54
 19        android:supportsRtl="true"
-19-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:11:9-35
+19-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:11:9-35
 20        android:testOnly="true"
 21        android:theme="@style/AppTheme" >
-21-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:12:9-40
-22        <activity android:name="jogasa.simarro.aplicacionbanco.pojo.Cajeros" />
-22-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:13:9-59
-22-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:13:19-47
-23        <activity android:name="jogasa.simarro.aplicacionbanco.pojo.MainActivity" />
-23-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:14:9-55
-23-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:14:19-52
+21-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:12:9-40
+22        <activity android:name="jogasa.simarro.aplicacionbanco.pojo.GestionCajerosActivity" />
+22-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:13:9-74
+22-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:13:19-62
+23        <activity android:name="jogasa.simarro.aplicacionbanco.pojo.Cajeros" />
+23-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:14:9-50
+23-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:14:19-47
 24        <activity android:name="jogasa.simarro.aplicacionbanco.pojo.SettingsActivity" />
-24-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:15:9-59
-24-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:15:19-56
+24-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:16:9-59
+24-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:16:19-56
 25        <activity android:name="jogasa.simarro.aplicacionbanco.adaptadores.AdapterMovimientos" />
-25-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:16:9-68
-25-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:16:19-65
+25-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:17:9-68
+25-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:17:19-65
 26        <activity android:name="jogasa.simarro.aplicacionbanco.pojo.Movimientos" />
-26-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:17:9-54
-26-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:17:19-51
+26-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:18:9-54
+26-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:18:19-51
 27        <activity android:name="jogasa.simarro.aplicacionbanco.pojo.Cuentas" />
-27-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:18:9-50
-27-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:18:19-47
+27-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:19:9-50
+27-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:19:19-47
 28        <activity
-28-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:19:9-21:55
+28-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:20:9-22:55
 29            android:name="jogasa.simarro.aplicacionbanco.pojo.Transferencias"
-29-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:20:13-48
+29-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:21:13-48
 30            android:windowSoftInputMode="adjustPan" />
-30-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:21:13-52
+30-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:22:13-52
 31        <activity android:name="jogasa.simarro.aplicacionbanco.changePasswd" />
-31-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:22:9-50
-31-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:22:19-47
+31-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:23:9-50
+31-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:23:19-47
 32        <activity android:name="jogasa.simarro.aplicacionbanco.mainAppActivity" />
-32-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:23:9-53
-32-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:23:19-50
+32-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:24:9-53
+32-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:24:19-50
 33        <activity
-33-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:24:9-26:55
+33-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:25:9-27:55
 34            android:name="jogasa.simarro.aplicacionbanco.MainActivity"
-34-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:25:13-41
+34-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:26:13-41
 35            android:windowSoftInputMode="adjustPan" />
-35-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:26:13-52
+35-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:27:13-52
 36        <activity android:name="jogasa.simarro.aplicacionbanco.WelcomeActivity" >
-36-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:27:9-33:20
-36-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:27:19-50
+36-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:28:9-34:20
+36-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:28:19-50
 37            <intent-filter>
-37-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:28:13-32:29
+37-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:29:13-33:29
 38                <action android:name="android.intent.action.MAIN" />
-38-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:29:17-69
-38-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:29:25-66
+38-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:30:17-69
+38-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:30:25-66
 39
 40                <category android:name="android.intent.category.LAUNCHER" />
-40-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:31:17-77
-40-->C:\Users\mati\AndroidStudioProjects\AplicacionBanco\app\src\main\AndroidManifest.xml:31:27-74
+40-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:32:17-77
+40-->D:\TeoriaAndroid\Ejercicios\AplicacionBanco\app\src\main\AndroidManifest.xml:32:27-74
 41            </intent-filter>
 42        </activity>
 43    </application>

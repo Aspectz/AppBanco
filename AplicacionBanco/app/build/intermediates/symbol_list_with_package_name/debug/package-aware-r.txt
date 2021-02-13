@@ -911,6 +911,9 @@ id beginning
 id bienvenido
 id bienvenidoText
 id blocking
+id boton_cancelar
+id boton_guardar
+id botonera
 id bottom
 id bounce
 id btnAcceder
@@ -926,6 +929,7 @@ id btnTransferencias
 id btnchangecontrasena
 id buttonPanel
 id cache_measures
+id cajeros
 id center
 id center_vertical
 id chain
@@ -947,6 +951,7 @@ id deltaRelative
 id dependency_ordering
 id dialog_button
 id dimensions
+id direccion
 id direct
 id disableHome
 id disablePostScroll
@@ -1004,6 +1009,12 @@ id invisible
 id italic
 id jumpToEnd
 id jumpToStart
+id label_cajeros
+id label_direccion
+id label_latitud
+id label_longitud
+id label_zoom
+id latitud
 id layout
 id left
 id line1
@@ -1012,7 +1023,11 @@ id linear
 id listMode
 id list_item
 id listaCajeros
+id longitud
 id makeTransfer
+id menu_crear
+id menu_editar
+id menu_eliminar
 id message
 id middle
 id motion_base
@@ -1140,6 +1155,7 @@ id visible
 id withText
 id wrap
 id wrap_content
+id zoom
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer cancel_button_image_alpha
@@ -1185,6 +1201,7 @@ layout activity_cajeros
 layout activity_change_passwd
 layout activity_cuentas
 layout activity_cuentas_adapter
+layout activity_gestion_cajeros
 layout activity_login
 layout activity_main
 layout activity_main_app
@@ -1206,7 +1223,9 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout toolbar
+menu menu_cajeros
 menu menu_main
+menu menu_opcionescajeros
 mipmap acceder_boton
 mipmap change_passwd
 mipmap change_passwdland
@@ -1253,6 +1272,10 @@ string amount
 string app_name
 string banco
 string bienvenido
+string boton_cancelar
+string boton_guardar
+string cajero_crear_titulo
+string cajero_editar_titulo
 string cambiarPasswd
 string cancel
 string changepasswdbtn

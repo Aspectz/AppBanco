@@ -1,4 +1,7 @@
-#Fri Jan 22 13:44:16 CET 2021
+#Wed Feb 03 11:32:20 CET 2021
 base.0=C\:\\Users\\mati\\AndroidStudioProjects\\AplicacionBanco\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=D\:\\TeoriaAndroid\\Ejercicios\\AplicacionBanco\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
